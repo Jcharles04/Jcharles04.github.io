@@ -1,0 +1,18 @@
+header {
+    width: 100%;
+}
+
+.header__logo{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    padding: $soft;
+    justify-content: center;
+}
+
+header .fas {
+    position: absolute;
+    color: #2c2c2c;
+    left: 5%;
+    font-size: 1.5rem;
+}

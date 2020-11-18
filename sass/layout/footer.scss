@@ -1,0 +1,29 @@
+.bottom {
+    padding: 20px;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+        a {
+            text-decoration: none;
+            color: white;
+            text-align: left;
+        }
+            :before {
+                padding: 0 10px 0 0;
+                font-size: 10px;
+            }
+}
+
+/*--------------------------------
+|        MEDIA QUERIES           |
+--------------------------------*/
+
+@media screen and (min-width: 767px) {
+    .bottom {
+        text-align: center;
+        a {
+            text-align: center;
+        }
+    }
+}
