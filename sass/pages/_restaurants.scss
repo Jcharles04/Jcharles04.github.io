@@ -176,6 +176,7 @@
 --------------------------------*/
 
 @media screen and (min-width:767px ) and (max-width: 1024px) {
+
     .title {
         h3 {
             padding-left: 28%;
@@ -187,6 +188,21 @@
     }
 }
 @media screen and (min-width:1025px ) {
+    
+    #background__img {
+        &--ledelice {
+            height: 500px;
+        }
+        &--alafran {
+            height: 500px;
+        }
+        &--lapalette {
+            height: 500px;
+        }
+        &--lanote {
+            height: 500px;
+        }
+    }
     .title {
         h3 {
             padding-left: 30%;

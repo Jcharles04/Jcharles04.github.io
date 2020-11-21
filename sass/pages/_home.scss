@@ -27,7 +27,7 @@
     background-color: $background-color;
     h2 {
         text-align: center;
-        padding: $soft;
+        padding: .5rem 3rem;
     }
 }
 .button p {
@@ -57,7 +57,7 @@ p, a, i{
 .tile {
     @include box-shadow;
     display: flex;
-    margin: .5rem auto;
+    margin: 1rem auto;
     flex-direction: row;
     height: 5rem;
     justify-content: center;
@@ -228,5 +228,27 @@ p, a, i{
     }
 }      
 
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+    .box {
+        max-width: 90%;
+        margin: 0 5% 0 5%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .box {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .tile {
+            width: 25%;
+        }
+        .thumbnail {
+            max-width: 35%;
+        }
+    }  
+}
 
     

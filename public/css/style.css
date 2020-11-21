@@ -15,27 +15,6 @@
     visibility: hidden;
   }
 }
-@media screen and (min-width: 767px) and (max-width: 1024px) {
-  .box {
-    max-width: 90%;
-    margin: 0 5% 0 5%;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .box {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .box .tile {
-    width: 25%;
-  }
-  .box .thumbnail {
-    max-width: 35%;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -142,7 +121,7 @@ header {
   display: flex;
   width: 50%;
   margin: auto;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem;
   justify-content: center;
 }
 
@@ -210,12 +189,12 @@ header .fas {
 }
 
 #quote {
-  padding: 2.5rem 0.5rem 2.5rem 0.5rem;
+  padding: 2.5rem 1rem 2.5rem 1rem;
   background-color: #F6F6F6;
 }
 #quote h2 {
   text-align: center;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem 3rem;
 }
 
 .button p {
@@ -225,7 +204,7 @@ header .fas {
 
 p, a, i {
   text-align: center;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem;
 }
 
 #quote a p {
@@ -249,7 +228,7 @@ p, a, i {
   justify-content: center;
   margin: auto;
   flex-direction: column;
-  padding: 2.5rem 0.5rem 2.5rem 0.5rem;
+  padding: 2.5rem 1rem 2.5rem 1rem;
 }
 .container h2 {
   text-align: start;
@@ -259,7 +238,7 @@ p, a, i {
 .tile {
   box-shadow: 3px 3px 0.8rem #c4c4c4;
   display: flex;
-  margin: 0.5rem auto;
+  margin: 1rem auto;
   flex-direction: row;
   height: 5rem;
   justify-content: center;
@@ -345,7 +324,7 @@ p, a, i {
   width: 0.5rem;
   align-items: center;
   color: white;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem;
 }
 
 /*   Restaurant   */
@@ -401,6 +380,7 @@ p, a, i {
   position: absolute;
   right: 5%;
   top: 10%;
+  border-radius: 4px;
   color: #278870;
 }
 
@@ -442,7 +422,7 @@ p, a, i {
   z-index: 2;
   color: transparent;
   -webkit-background-clip: text;
-  -moz-background-clip: text;
+  background-clip: text;
   background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
   transition: opacity 1s ease-out;
   opacity: 0;
@@ -460,6 +440,27 @@ p, a, i {
 @media screen and (min-width: 767px) {
   .container h2 {
     text-align: center;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .box {
+    max-width: 90%;
+    margin: 0 5% 0 5%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .box .tile {
+    width: 25%;
+  }
+  .box .thumbnail {
+    max-width: 35%;
   }
 }
 /*   IMG Restaurant   */
@@ -575,7 +576,7 @@ p, a, i {
   z-index: 2;
   color: transparent;
   -webkit-background-clip: text;
-  -moz-background-clip: text;
+  background-clip: text;
   background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
   transition: opacity 1s ease-out;
   opacity: 0;
@@ -712,6 +713,19 @@ p, a, i {
   }
 }
 @media screen and (min-width: 1025px) {
+  #background__img--ledelice {
+    height: 500px;
+  }
+  #background__img--alafran {
+    height: 500px;
+  }
+  #background__img--lapalette {
+    height: 500px;
+  }
+  #background__img--lanote {
+    height: 500px;
+  }
+
   .title h3 {
     padding-left: 30%;
   }
